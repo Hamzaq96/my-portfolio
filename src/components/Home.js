@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
+import image from '../image.jpeg'
 
 function Home() {
     return (
-        <div className="container py-5">
-        <div className="jumbotron text-white jumbotron-image shadow" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80)'}}>
-        <h2 className="mb-4">
-            HAMZA QURESHI
-        </h2>
-        </div>
-  </div>
+        <main>
+            <img src={image} alt="Background image" className="absolute object-cover w-full h-full"/>
+            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+                <h1 className="text-6xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name">Hi there! I'm Hamza</h1>
+            </section>
+        </main>
     );
 }
 
