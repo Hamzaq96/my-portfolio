@@ -14,12 +14,12 @@ function NavBar() {
                      exact>
                         Home
                     </NavLink>
-                    <NavLink 
+                    {/* <NavLink 
                         className="text-lg inline-flex items-center py-3 px-3 my-6 rounded text-gray-900 hover:text-gray-900"
                         activeClassName="text-blue-400 underline" 
                         to="/post">
                         Blog Posts
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink 
                      className="text-lg inline-flex items-center py-3 px-3 my-6 rounded text-gray-900 hover:text-gray-900"
                      activeClassName="text-blue-400 underline"

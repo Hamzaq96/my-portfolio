@@ -13,6 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
+      {/* <hr /> */}
       <switch>
         <Route component={Home} path='/' exact />
         <Route component={About} path='/about' />

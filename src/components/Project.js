@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import sanityClient from '../client';
+import image from '../image.jpeg'
 
 function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -19,7 +20,7 @@ function Project() {
     }, []);
 
     return (
-        <main className="bg-green-100 min-h-screen p-12">
+        <main className=" min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">
                     My Projects
@@ -27,7 +28,7 @@ function Project() {
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">
                     Welcome to my projects page!
                 </h2>
-                <section className="grid grid-cols-2 gap-8">
+                <section className="grid lg-grid-cols-1 gap-8">
                     {projectData && projectData.map((project, index) => (
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
                             <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
@@ -36,6 +37,11 @@ function Project() {
                                 </a>
                             </h3>
                             <div className="text-gray-500 text-xs space-x-4">
+                                {/* <img
+                                    src={image}
+                                    alt="my image"
+                                    className="w-full h-full rounded-r object-cover absolute"
+                                /> */}
                                 <span>
                                     <strong className="font-bold">Finished on</strong>{" "}
                                     {new Date(project.date).toLocaleDateString()}
