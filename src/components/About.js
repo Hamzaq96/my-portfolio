@@ -32,14 +32,17 @@ function About() {
             {/* <img /> */}
             <div className="p-15 container mx-auto relative">
                 <section className="bg-grey-800 rounded-lg shadow-2xl lg:flex p-20">
-                    <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name} />
+                    <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-80 mr-8" alt={author.name} />
                     <div className="text-lg flex flex-col justify-center">
                         <h1 className="cursive text-6xl text-blue-400 mb-4">
-                            Hey there. I am {""}
-                            <span className="text-blue-200">{author.name}</span>
+                            {/* Hey there. I am {""} */}
+                            About {""}
+                            {/* <span className="text-blue-200">{author.name}</span> */}
+                            <span className="text-blue-200">Me!</span>
                         </h1>
                         <div className="prose lg:prose-xl text-gray-900">
                             <BlockContent blocks={author.bio} projectId="rrc91a42" dataset="production" />
+                            {/* <a href="https://drive.google.com/drive/folders/11MSVuxyZZe89-KVpvY4ChiJuydJqq03Q" target="_blank">Click here to check my resume</a> */}
                         </div>
                     </div>
                 </section>

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import sanityClient from '../client';
-import image from '../image.jpeg'
 
 function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -46,10 +45,10 @@ function Project() {
                                     <strong className="font-bold">Finished on</strong>{" "}
                                     {new Date(project.date).toLocaleDateString()}
                                 </span>
-                                <span>
+                                {/* <span>
                                     <strong className="font-bold">Company</strong>{" "}
                                     {project.place}
-                                </span>
+                                </span> */}
                                 <span>
                                     <strong className="font-bold">Type</strong>{" "}
                                     {project.projectType}
